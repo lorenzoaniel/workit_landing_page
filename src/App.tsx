@@ -5,9 +5,9 @@ import Hero from "./sections/hero";
 
 const App: React.FC = () => {
 	return (
-		<div className="h-full">
+		<main className="h-full">
 			<Hero />
-		</div>
+		</main>
 	);
 };
 
