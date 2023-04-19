@@ -110,3 +110,11 @@ body {
 .icon-hover:hover path {
 	fill: rgb(36, 5, 62);
 }
+
+.attribution {
+	font-size: 16px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
