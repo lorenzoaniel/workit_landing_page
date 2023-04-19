@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Workit Landing Page solution]()
+- Solution URL: [Workit Landing Page solution](https://www.frontendmentor.io/solutions/workit-landing-page-tailwindcssreactjsvite-GQaaw8Tne_)
 - Live Site URL: [Workit Landing Page livesite](https://lorenzoaniel.github.io/workit_landing_page/)
 
 ## My process
