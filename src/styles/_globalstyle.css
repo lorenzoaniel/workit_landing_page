@@ -5,13 +5,12 @@
 
 @font-face {
 	font-family: "Fraunces";
-	src: url("src/assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
-		format("truetype");
+	src: url("./fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Manrope";
-	src: url("src/assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+	src: url("./fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
 * {
