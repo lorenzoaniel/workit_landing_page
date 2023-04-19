@@ -16,6 +16,8 @@
 
 * {
 	font-family: "Manrope", monospace;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
 }
 
 /* Hide scrollbar for Chrome, Safari, and Opera */
@@ -24,9 +26,9 @@
 }
 
 html {
-	height: 100vh;
-	font-size: 62.5%;
+	height: fit-content;
 	overflow-y: scroll;
+	font-size: 62.5%;
 }
 
 /* Hide scrollbar for Internet Explorer and Edge */
@@ -39,4 +41,72 @@ body {
 
 #root {
 	height: inherit;
+}
+
+#hero-section::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 48.171rem;
+	background-color: rgb(36, 5, 62);
+	z-index: -1;
+	clip-path: ellipse(100% 40% at 50% 60%);
+}
+
+#hero-section::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 48.171rem;
+	background-color: rgb(36, 5, 62);
+	z-index: -1;
+	clip-path: ellipse(100% 80% at 50% 20%);
+}
+
+#info-section::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1070.71px;
+	background-color: rgb(252, 248, 255);
+	z-index: -2;
+	clip-path: ellipse(100% 20% at 50% 80%);
+}
+
+@media screen and (min-width: 768px) {
+	#hero-section::after {
+		height: 54rem;
+	}
+
+	#hero-section::before {
+		height: 54rem;
+		clip-path: ellipse(100% 95% at 50% 5%);
+	}
+
+	#info-section::before {
+		clip-path: ellipse(100% 40% at 50% 60%);
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	#hero-section::after {
+		height: 73rem;
+	}
+
+	#hero-section::before {
+		height: 73rem;
+		clip-path: ellipse(100% 70% at 50% 20%);
+	}
+
+	#info-section::before {
+		clip-path: ellipse(100% 40% at 50% 60%);
+	}
+}
+
+.icon-hover:hover path {
+	fill: rgb(36, 5, 62);
 }

@@ -3,16 +3,14 @@ import { button } from "../../styles/mixins/button";
 
 interface Props {
 	isPrimary: boolean;
+	title: string;
+	width: string;
 }
 
-const Button: React.FC<Props> = ({ isPrimary }) => {
+const Button: React.FC<Props> = ({ isPrimary, title, width }) => {
 	return (
-		<button
-			className={`${
-				isPrimary ? button.primary : button.secondary
-			} flex justify-center items-end border-b-[0.3rem] border-green`}
-		>
-			Apply for access
+		<button className={`${isPrimary ? button.primary : button.secondary} ${width} `}>
+			{title}
 		</button>
 	);
 };
